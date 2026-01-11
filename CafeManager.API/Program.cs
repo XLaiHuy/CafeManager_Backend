@@ -5,31 +5,39 @@ using CafeManager.BUS;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// --- 1. Đăng ký các Dịch vụ (Services) ---
 
 builder.Services.AddControllers();
-// 1. Lấy chuỗi kết nối từ appsettings.json
+
+// Lấy chuỗi kết nối từ biến môi trường trên Render hoặc appsettings.json
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// 2. Đăng ký CafeContext vào hệ thống Dependency Injection
-builder.Services.AddDbContext<CafeContext>(options =>options.UseNpgsql(connectionString));
+// Đăng ký DbContext sử dụng PostgreSQL
+builder.Services.AddDbContext<CafeContext>(options =>
+    options.UseNpgsql(connectionString));
 
+// Đăng ký các lớp Business Logic và Data Access (DI)
 builder.Services.AddScoped<AccountDAL>();
 builder.Services.AddScoped<AccountBUS>();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Cấu hình Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// --- 2. Cấu hình HTTP Request Pipeline ---
 
+// Bật Swagger cho TẤT CẢ các môi trường (Quan trọng để chạy trên Render)
+app.UseSwagger();
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    // Thiết lập này giúp khi bạn vào thẳng link Render nó sẽ hiện Swagger luôn
+    options.RoutePrefix = string.Empty;
+});
+
+// Cho phép API trả về dữ liệu (JSON) cho WinForms
 app.UseAuthorization();
 
 app.MapControllers();
