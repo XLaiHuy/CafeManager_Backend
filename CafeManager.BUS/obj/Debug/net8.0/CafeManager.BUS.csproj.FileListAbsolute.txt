@@ -1,0 +1,17 @@
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\bin\Debug\net8.0\CafeManager.BUS.deps.json
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\bin\Debug\net8.0\CafeManager.BUS.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\bin\Debug\net8.0\CafeManager.BUS.pdb
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\bin\Debug\net8.0\CafeManager.DAL.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\bin\Debug\net8.0\CafeManager.DTO.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\bin\Debug\net8.0\CafeManager.DAL.pdb
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\bin\Debug\net8.0\CafeManager.DTO.pdb
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.csproj.AssemblyReference.cache
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.AssemblyInfoInputs.cache
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.AssemblyInfo.cs
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.csproj.CoreCompileInputs.cache
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeMana.5ED88095.Up2Date
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\refint\CafeManager.BUS.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.pdb
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\ref\CafeManager.BUS.dll
