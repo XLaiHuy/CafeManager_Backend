@@ -117,3 +117,4 @@ C:\Users\HUY\source\repos\CafeManager\CafeManager.API\obj\Debug\net8.0\refint\Ca
 C:\Users\HUY\source\repos\CafeManager\CafeManager.API\obj\Debug\net8.0\CafeManager.API.pdb
 C:\Users\HUY\source\repos\CafeManager\CafeManager.API\obj\Debug\net8.0\CafeManager.API.genruntimeconfig.cache
 C:\Users\HUY\source\repos\CafeManager\CafeManager.API\obj\Debug\net8.0\ref\CafeManager.API.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.API\obj\Debug\net8.0\CafeManager.API.sourcelink.json

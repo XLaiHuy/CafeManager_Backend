@@ -15,3 +15,4 @@ C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManag
 C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\refint\CafeManager.BUS.dll
 C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.pdb
 C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\ref\CafeManager.BUS.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.BUS\obj\Debug\net8.0\CafeManager.BUS.sourcelink.json

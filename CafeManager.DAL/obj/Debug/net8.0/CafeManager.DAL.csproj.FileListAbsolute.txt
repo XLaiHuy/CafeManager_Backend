@@ -15,3 +15,4 @@ C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\refint\Ca
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.pdb
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.genruntimeconfig.cache
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\ref\CafeManager.DAL.dll
+C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.sourcelink.json

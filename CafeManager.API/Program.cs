@@ -20,6 +20,9 @@ builder.Services.AddDbContext<CafeContext>(options =>
 builder.Services.AddScoped<AccountDAL>();
 builder.Services.AddScoped<AccountBUS>();
 
+builder.Services.AddScoped<BillDAL>();
+builder.Services.AddScoped<BillBUS>();
+
 // Cấu hình Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
