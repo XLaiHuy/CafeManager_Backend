@@ -13,4 +13,5 @@ namespace CafeManager.DTO
         public decimal Price { get; set; }
         public decimal TotalPrice => Count* Price;
     }
+
 }

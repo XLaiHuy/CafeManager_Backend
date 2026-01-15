@@ -99,5 +99,42 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CafeManager.API.Controllers.BillInfoController",
+    "Method": "AddFood",
+    "RelativePath": "api/BillInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CafeManager.DTO.AddBillInfoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CafeManager.API.Controllers.ReportController",
+    "Method": "GetRevenueReport",
+    "RelativePath": "api/Report/revenue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

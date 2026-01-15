@@ -23,6 +23,13 @@ builder.Services.AddScoped<AccountBUS>();
 builder.Services.AddScoped<BillDAL>();
 builder.Services.AddScoped<BillBUS>();
 
+
+builder.Services.AddScoped<BillInfoDAL>();
+builder.Services.AddScoped<BillInfoBUS>();
+
+builder.Services.AddScoped<ReportDAL>();
+builder.Services.AddScoped<ReportBUS>();
+
 // Cấu hình Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
