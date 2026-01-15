@@ -9,10 +9,10 @@ C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManag
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.AssemblyInfoInputs.cache
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.AssemblyInfo.cs
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.csproj.CoreCompileInputs.cache
+C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.sourcelink.json
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeMana.55236D02.Up2Date
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.dll
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\refint\CafeManager.DAL.dll
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.pdb
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.genruntimeconfig.cache
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\ref\CafeManager.DAL.dll
-C:\Users\HUY\source\repos\CafeManager\CafeManager.DAL\obj\Debug\net8.0\CafeManager.DAL.sourcelink.json

@@ -1,4 +1,7 @@
-﻿namespace CafeManager.DTO
+﻿using System.ComponentModel;
+using System.Text.Json.Serialization;
+
+namespace CafeManager.DTO
 {
     public class AccountDTO
     {   
@@ -7,5 +10,18 @@
 
         public int Type { get; set; }
 
+    }
+    public class AccountInputDTO
+    {
+        [JsonIgnore]
+        public int Id { get; set; }
+        [DefaultValue("user")]
+        public string Username { get; set; }
+        [DefaultValue("")]
+        public string Password { get; set; }
+        [DefaultValue("")]
+        public string Displayname { get; set; }
+        [JsonIgnore]
+        public int Type { get; set; }
     }
 }

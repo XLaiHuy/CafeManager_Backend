@@ -30,6 +30,22 @@ builder.Services.AddScoped<BillInfoBUS>();
 builder.Services.AddScoped<ReportDAL>();
 builder.Services.AddScoped<ReportBUS>();
 
+
+builder.Services.AddScoped<AccountDAL>();
+builder.Services.AddScoped<AccountBUS>();
+
+builder.Services.AddScoped<CustomerDAL>();
+builder.Services.AddScoped<CustomerBUS>();
+
+builder.Services.AddScoped<TableDAL>();
+builder.Services.AddScoped<TableBUS>();
+
+builder.Services.AddScoped<ProductCategoryDAL>();
+builder.Services.AddScoped<ProductCategoryBUS>();
+
+builder.Services.AddScoped<FoodDAL>();
+builder.Services.AddScoped<FoodBUS>();
+
 // Cấu hình Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

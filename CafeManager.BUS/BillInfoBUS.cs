@@ -20,13 +20,21 @@ namespace CafeManager.BUS
             _infoDAL= infoDAL;
         }
 
-        public bool AddFoodToBill(AddBillInfoRequest request)
+        public List<BillDetailDTO> AddAndReload(int idBill, int idFood, int count, decimal price)
         { 
-            var food=_context.Foods.FirstOrDefault(f => f.Id == request.idFood);
-            if (food == null) return false;
-            return _infoDAL.AddOrUpdateBillInfo(request.IdBill, request.idFood, request.Count, food.Price);
-
+            bool isAdded = _infoDAL.AddOrUpdateBillInfo(idBill, idFood, count, price);
+            if (isAdded)
+            {
+                return _context.Billinfos.
+                    Where(bi => bi.Idbill == idBill)
+                    .Select(bi => new BillDetailDTO
+                    {
+                        FoodName = bi.IdfoodNavigation.Name,
+                        Count = bi.Count,
+                        Price = bi.Priceatsale
+                    }).ToList();   
+            }
+            return new List<BillDetailDTO>();
         }
-
     }
 }

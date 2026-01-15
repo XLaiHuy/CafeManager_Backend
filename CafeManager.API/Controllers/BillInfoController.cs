@@ -17,12 +17,24 @@ namespace CafeManager.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddFood([FromBody] AddBillInfoRequest request)
+        public IActionResult AddFoodToBill([FromBody] AddBillInfoRequest request)
         {
-            bool result = _infoBUS.AddFoodToBill(request);
-            if (!result) return BadRequest("Không thể thêm món vào hóa đơn");
-            return Ok("Thêm món vào hóa đơn thành công");
+          var updatedList= _infoBUS.AddAndReload(
+            request.IdBill,
+            request.idFood,
+            request.Count,
+            request.Price);
+
+            if(updatedList != null)
+            {
+                return Ok(updatedList);
+            }
+            else
+            {
+                return BadRequest("Failed to add food to bill.");
+            }
 
         }
+
     }
 }

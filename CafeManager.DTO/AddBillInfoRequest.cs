@@ -11,6 +11,7 @@ namespace CafeManager.DTO
         public int IdBill { get; set; } 
         public int idFood { get; set; } 
 
-        public int Count { get; set; }  
+        public int Count { get; set; }
+        public decimal Price { get; set; }
     }
 }

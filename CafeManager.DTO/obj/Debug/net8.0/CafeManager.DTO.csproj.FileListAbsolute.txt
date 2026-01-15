@@ -5,8 +5,8 @@ C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManag
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManager.DTO.AssemblyInfoInputs.cache
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManager.DTO.AssemblyInfo.cs
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManager.DTO.csproj.CoreCompileInputs.cache
+C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManager.DTO.sourcelink.json
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManager.DTO.dll
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\refint\CafeManager.DTO.dll
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManager.DTO.pdb
 C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\ref\CafeManager.DTO.dll
-C:\Users\HUY\source\repos\CafeManager\CafeManager.DTO\obj\Debug\net8.0\CafeManager.DTO.sourcelink.json
