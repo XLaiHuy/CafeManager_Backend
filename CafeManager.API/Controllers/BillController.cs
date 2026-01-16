@@ -26,6 +26,7 @@ namespace CafeManager.API.Controllers
             return Ok(idBill);
         }
 
+
         [HttpGet("unpaid/{idTable}")]
         public IActionResult GetUnpaid(int idTable) 
         {

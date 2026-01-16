@@ -28,7 +28,8 @@ namespace CafeManager.DAL
         }
         public Tablefood GetTablebyName(string name)
         {
-            return _context.Tablefoods.FirstOrDefault(t => t.Name == name && t.Isdeleted == false);
+            string cleanedName = name.Trim();
+            return _context.Tablefoods.FirstOrDefault(t => t.Name.ToLower() == cleanedName.ToLower() && t.Isdeleted == false);
         }
        public void AddTable(Tablefood table)
         {

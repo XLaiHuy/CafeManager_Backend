@@ -48,18 +48,24 @@ namespace CafeManager.DAL
                         select new BillDetailDTO
                         {
                             FoodName = f.Name,
-                            Count=bi.Count,
-                            Price=bi.Priceatsale
+                            Count = bi.Count,
+                            Price = bi.Priceatsale
                         };
             return query.ToList();
         }
 
-        public bool UpdateBillTable(int idBill, int idNewTable)
+        public bool UpdateBillTable(int idBill,int idOldTable ,int idNewTable)
         {
             var bill = _context.Bills.Find(idBill);
-            if (bill == null) return false;
+            var tableOld= _context.Tablefoods.Find(idOldTable);
+            var tableNew= _context.Tablefoods.Find(idNewTable);
+
+            if (bill == null || tableOld == null || tableNew == null)
+                return false;
 
             bill.Idtable = idNewTable;
+            tableOld.Status = "Trống";
+            tableNew.Status = "Có người";
             return _context.SaveChanges() > 0;
         }
 

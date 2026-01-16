@@ -23,7 +23,8 @@ namespace CafeManager.DAL
         }
         public Productcategory getByName(string name)
         {
-            return _context.Productcategories.FirstOrDefault(c => c.Name == name && c.Isdeleted == false);
+            string trimmedName = name.Trim();
+            return _context.Productcategories.FirstOrDefault(c => c.Name.ToLower() == trimmedName.ToLower() && c.Isdeleted == false);
         }
         public void AddProductCategory(Productcategory category)
         {

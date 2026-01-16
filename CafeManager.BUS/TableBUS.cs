@@ -32,7 +32,9 @@ namespace CafeManager.BUS
             {
                 throw new Exception("Tên bàn không được để trống!");
             }
+
             var existingTable = _tableDal.GetTablebyName(input.Name);
+
             if (existingTable != null)
             {
                 throw new Exception("Tên bàn này đã tồn tại, vui lòng chọn tên khác!");
@@ -50,7 +52,9 @@ namespace CafeManager.BUS
         public void DeleteTable(int id)
         {
             var table = _tableDal.GetTablebyid(id);
+
             if (table == null) throw new Exception("Bàn không tồn tại");
+
             if (table.Status == "Có người")
             {
                 throw new Exception("Bàn đang có người, không thể xóa!");

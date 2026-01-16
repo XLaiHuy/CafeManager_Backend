@@ -12,11 +12,13 @@ namespace CafeManager.API.Controllers
         {
             _productCategoryBUS = productCategoryBUS;
         }
+
         [HttpGet("get-all")]
         public IActionResult GetAllCategories()
         {
            return Ok( _productCategoryBUS.GetAllProductCategories());
         }
+
         [HttpPost("create")]
         public IActionResult CreateCategory([FromBody] DTO.ProductCategoryDTO input)
         {

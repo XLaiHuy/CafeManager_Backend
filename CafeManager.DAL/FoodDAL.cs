@@ -27,7 +27,8 @@ namespace CafeManager.DAL
          }
         public Food getByName(string name)
         {
-            return _context.Foods.FirstOrDefault(f => f.Name == name && f.Isdeleted == false);
+            string trimmedName = name.Trim();
+            return _context.Foods.FirstOrDefault(f => f.Name.ToLower() == trimmedName.ToLower() && f.Isdeleted == false);
         }
         public Food getByID(int id)
         {

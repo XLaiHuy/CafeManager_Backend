@@ -17,7 +17,7 @@ namespace CafeManager.DAL
         }
         public List<Account> GetAllAccounts()
         {
-            return _context.Accounts.Where(x => x.Isdeleted == false).ToList(); // can xem lai
+            return _context.Accounts.Where(x => x.Isdeleted == false && x.Type==0).ToList(); // can xem lai
         }
         public Account GetAccountById(int id)
         {
@@ -25,7 +25,8 @@ namespace CafeManager.DAL
         }
         public Account GetAccountByUserName(string username)
         {
-            return _context.Accounts.FirstOrDefault(a => a.Username == username && a.Isdeleted == false);
+            string trimName = username.Trim();
+            return _context.Accounts.FirstOrDefault(a => a.Username.ToLower() == username.ToLower() && a.Isdeleted == false);
         }
         public void AddAccount(Account account)
         {

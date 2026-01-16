@@ -58,13 +58,9 @@ namespace CafeManager.BUS
                 var tableNew= _context.Tablefoods.Find(request.IdTableNew);
                 if (tableNew == null || tableNew.Status != "Trống") return false;
 
-                _billDAL.UpdateBillTable(idBill, request.IdTableNew);
+                bool success= _billDAL.UpdateBillTable(idBill, request.IdTableOld, request.IdTableNew);
 
-                var tableOld = _context.Tablefoods.Find(request.IdTableOld);
-
-                tableOld.Status = "Trống";
-                tableNew.Status = "Có người";
-                _context.SaveChanges();
+                if (!success) throw new Exception("Lỗi cập nhật dữ liệu");
                 transaction.Commit();
                 return true;
 
@@ -79,7 +75,8 @@ namespace CafeManager.BUS
         }
 
         public bool Checkout(int idBill, CheckoutRequest request)
-        { 
+        {   
+
             using var transaction = _context.Database.BeginTransaction();
             try
             {

@@ -13,6 +13,7 @@ namespace CafeManager.API.Controllers
         {
             _customerBus = customerBUS;
         }
+
         [HttpGet("search")]
         public IActionResult Search([FromQuery] string phone)
         {

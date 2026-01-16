@@ -12,10 +12,11 @@ namespace CafeManager.API.Controllers
         {
             _tableBus = tableBUS;
         }
+
         [HttpGet("getlist")]
         public IActionResult GetListTables()
         {
-            return Ok(_tableBus.GetListTables());
+            return Ok(_tableBus.GetListTables());   
         }
         [HttpPost("create")]
         public IActionResult CreateTable([FromBody] DTO.TableDTO input)
@@ -47,7 +48,7 @@ namespace CafeManager.API.Controllers
         public IActionResult UpdateTable(int id,[FromBody] DTO.TableDTO input)
         {
             try
-            {
+            {   
                 input.Id = id;
                 _tableBus.UpdateTable(input);
                 return Ok(new { message = "Cập nhật bàn thành công" });

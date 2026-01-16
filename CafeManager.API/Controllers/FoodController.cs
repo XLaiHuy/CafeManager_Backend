@@ -13,6 +13,7 @@ namespace CafeManager.API.Controllers
         {
             _bus = bus;
         }
+
         [HttpGet("category/{idCategory}")]
         public IActionResult GetFoodsByCategory(int idCategory)
         {
