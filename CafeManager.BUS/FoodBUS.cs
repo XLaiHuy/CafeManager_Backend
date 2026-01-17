@@ -85,8 +85,11 @@ namespace CafeManager.BUS
             if (input.Price < 0)
             {
                 throw new Exception("Giá không được âm");
-                food.Price = (decimal)input.Price;
+               
             }
+            else { food.Price = (decimal)input.Price; }
+               
+
             _foodDal.Update(food);
         }
         public void Delete(int id){
