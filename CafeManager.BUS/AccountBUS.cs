@@ -34,7 +34,8 @@ namespace CafeManager.BUS
             {
                 Id = a.Id,
                 Displayname = a.Displayname,
-                Type = a.Type
+                Type = a.Type,
+                
             }).ToList();
         }
         public void createAccount(AccountInputDTO input)
