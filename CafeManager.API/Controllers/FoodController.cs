@@ -53,7 +53,7 @@ namespace CafeManager.API.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
-        [HttpPut("update{idc}")]
+        [HttpPut("update/{idc}")]
         public IActionResult UpdateFood(int idc,[FromBody] DTO.FoodDTO input)
         {
             try
