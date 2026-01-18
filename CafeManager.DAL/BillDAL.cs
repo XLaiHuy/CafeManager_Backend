@@ -76,7 +76,8 @@ namespace CafeManager.DAL
             if (bill == null) return false;
 
             bill.Status = 1;
-
+            bill.Discount= discount;
+            bill.Datecheckin = DateTime.Now;
             if (idCustomer == 0) bill.Idcustomer = null;
             else bill.Idcustomer = idCustomer;
             return true;
