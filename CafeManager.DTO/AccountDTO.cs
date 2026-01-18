@@ -13,7 +13,7 @@ namespace CafeManager.DTO
     }
     public class AccountInputDTO
     {
-        [JsonIgnore]
+      
         public int Id { get; set; }
         [DefaultValue("user")]
         public string Username { get; set; }

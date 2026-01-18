@@ -9,7 +9,7 @@ namespace CafeManager.DTO
 {
     public class CustomerDTO
     {
-        [JsonIgnore]
+       
         public int Id { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }
