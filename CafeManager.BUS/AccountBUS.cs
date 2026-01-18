@@ -24,7 +24,8 @@ namespace CafeManager.BUS
             {
                 Id = accountEntity.Id,
                 Displayname = accountEntity.Displayname,
-                Type = accountEntity.Type
+                Type = accountEntity.Type,
+                Username = accountEntity.Username,
             };
         }
         public List<AccountDTO> GetAccount()
@@ -35,20 +36,11 @@ namespace CafeManager.BUS
                 Id = a.Id,
                 Displayname = a.Displayname,
                 Type = a.Type,
-                
-            }).ToList();
-        }
-        public List<AccountInputDTO> GetAccount1()
-        {
-            var list = _accountDal.GetAllAccounts();
-            return list.Select(a => new AccountInputDTO
-            {
-                Id = a.Id,
                 Username = a.Username,
-                Displayname = a.Displayname,
-                Type = a.Type
+
             }).ToList();
         }
+       
         public void createAccount(AccountInputDTO input)
         {
             if (_accountDal.GetAccountByUserName(input.Username) != null)

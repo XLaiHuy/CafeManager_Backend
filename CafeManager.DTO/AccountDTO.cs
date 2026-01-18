@@ -9,6 +9,9 @@ namespace CafeManager.DTO
         public string Displayname { get; set; }
 
         public int Type { get; set; }
+        public string Username { get; set; }
+       
+
 
     }
     public class AccountInputDTO
