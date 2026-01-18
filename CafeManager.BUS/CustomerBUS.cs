@@ -51,6 +51,7 @@ namespace CafeManager.BUS
             {
                 Name = input.Name,
                 Phone = input.Phone,
+                Id= input.Id,
                 Isdeleted = false
             };
             var newCustomer = _customerDal.addCustomer(customer);
