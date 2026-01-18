@@ -58,7 +58,7 @@ namespace CafeManager.API.Controllers
         public IActionResult getAccounts()
         {
 
-            return Ok(_accountBUS.GetAccount());
+            return Ok(_accountBUS.GetAccount1());
         }
 
     }

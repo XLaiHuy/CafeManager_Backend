@@ -38,6 +38,17 @@ namespace CafeManager.BUS
                 
             }).ToList();
         }
+        public List<AccountInputDTO> GetAccount1()
+        {
+            var list = _accountDal.GetAllAccounts();
+            return list.Select(a => new AccountInputDTO
+            {
+                Id = a.Id,
+                Username = a.Username,
+                Displayname = a.Displayname,
+                Type = a.Type
+            }).ToList();
+        }
         public void createAccount(AccountInputDTO input)
         {
             if (_accountDal.GetAccountByUserName(input.Username) != null)
