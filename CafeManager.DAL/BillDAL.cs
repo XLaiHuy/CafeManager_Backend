@@ -76,10 +76,10 @@ namespace CafeManager.DAL
             if (bill == null) return false;
 
             bill.Status = 1;
-            bill.Datecheckin= DateTime.Now;
-            bill.Discount = discount;
-            bill.Idcustomer= idCustomer;
-            return _context.SaveChanges() > 0;
+
+            if (idCustomer == 0) bill.Idcustomer = null;
+            else bill.Idcustomer = idCustomer;
+            return true;
         
         }
 

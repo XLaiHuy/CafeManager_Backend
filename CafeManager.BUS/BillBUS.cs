@@ -99,8 +99,9 @@ namespace CafeManager.BUS
 
 
             }
-            catch
+            catch(Exception e)
             {
+                Console.WriteLine(e.Message);
                 transaction.Rollback();
                 return false;
             }
